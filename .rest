@@ -1,0 +1,24 @@
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+    "username": "ed",
+    "password" : "ed"
+}
+###
+
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "username": "jansol",
+    "password" : "12345"
+}
+###
+GET http://localhost:5000/user
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NmViNzY1YmI2MDJmNjYxZGFhMGQyNjkiLCJpYXQiOjE3MjY3MDk3NjcsImV4cCI6MTcyNjcxMzM2N30.FOVA2Jtq5VEuxGfRuPpvGqe9-nHpKDzh2dnrjktpxJw
+###
+GET http://localhost:5000/users
+###
+GET http://localhost:5000/messages/66eba674341bf520a006a565/66eb765bb602f661daa0d269
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NmViNzY1YmI2MDJmNjYxZGFhMGQyNjkiLCJpYXQiOjE3MjY3MDk3NjcsImV4cCI6MTcyNjcxMzM2N30.FOVA2Jtq5VEuxGfRuPpvGqe9-nHpKDzh2dnrjktpxJw

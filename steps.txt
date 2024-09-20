@@ -1,0 +1,12 @@
+SERVER:
+
+NPM INSTALLATION
+npm i express
+... cors
+... dotenv
+... mongoose
+... bcrypt
+... jsonwebtoken
+
+for dev dependency:
+npm i nodemon -D
