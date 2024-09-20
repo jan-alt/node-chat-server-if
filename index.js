@@ -8,7 +8,15 @@ const socket = require('./socket/socket')
 const msgRouter = require('./routers/msgRouter')
 require('./configs/dbConnect')()
 
-app.use(cors({ origin: process.env.CLIENT_URL }))
+const corsOptions = {
+    origin: 'https://node-chat-app-if.vercel.app', // Replace with your frontend's URL
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    credentials: true, // Allow cookies if needed
+};
+
+app.use(cors(corsOptions));
+
+// app.use(cors({ origin: process.env.CLIENT_URL }))
 app.use(express.json())
 
 app.get('/', (req, res) => {
